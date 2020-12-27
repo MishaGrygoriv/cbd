@@ -1,30 +1,35 @@
 <template>
     <div class="main-layout">
-<div class="header">
-    <h2 class="test">Header</h2>
-</div>
+    <the-header/>
 <div class="main-content">
-<slot/>
+<first-section/>
+<second-section/>
+<third-section/>
+<fourth-section/>
 </div>
-<div class="footer">
-    <h2 class="test2">Footer</h2>
-</div>
+    <the-footer/>
     </div>
 </template>
 <script>
+import FirstSection from '../sections/FirstSection';
+import FourthSection from '../sections/FourthSection'
+import SecondSection from '../sections/SecondSection';
+import TheHeader from '../sections/TheHeader'
+import ThirdSection from '../sections/ThirdSection';
+import TheFooter from '../sections/TheFooter';
 
     export default {
 name: 'MainLayout',
+components: {
+TheHeader,
+FirstSection,
+SecondSection,
+ThirdSection,
+FourthSection,
+TheFooter,
+},
     };
 </script>
 <style lang="scss">
-.header {
-    background-color: red;
-}
-main-content {
-    background-color: green;
-}
-.footer {
-    background-color: yellow;
-}
+
 </style>
