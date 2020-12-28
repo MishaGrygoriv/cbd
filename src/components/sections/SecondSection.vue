@@ -1,5 +1,5 @@
 <template>
-        <div id="products" class="second-section uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider="autoplay: false; autoplay-interval: 5000; pause-on-hover: false">
+        <div id="products" class="second-section uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider="autoplay: true; autoplay-interval: 5000; pause-on-hover: false">
 <h2 class="second-section__title">CBD Featured Products</h2>
     <ul class="slider uk-slider-items uk-child-width-1-2 uk-child-width-1-3@m uk-grid">
         <li class="slider__item">
