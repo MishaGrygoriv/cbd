@@ -1,5 +1,5 @@
 <template>
-        <div id="products" class="second-section uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider="autoplay: true; autoplay-interval: 5000; pause-on-hover: false">
+        <div id="products" class="second-section uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider="autoplay: false; autoplay-interval: 5000; pause-on-hover: false">
 <h2 class="second-section__title">CBD Featured Products</h2>
     <ul class="slider uk-slider-items uk-child-width-1-2 uk-child-width-1-3@m uk-grid">
         <li class="slider__item">
@@ -62,7 +62,7 @@
                    <li class="slider__rating-item" uk-icon="star"></li>
                    <li class="slider__rating-item" uk-icon="star"></li>
                </ul>
-               <p class="slider__description slider__description--third">CBD+Curcumin Coffee 750 mg</p>
+               <p class="slider__description slider__description--first">CBD+Curcumin Coffee 750 mg</p>
                <img :src="fourthItem" alt="first-img" class="slider__img">
            </div>
            <div class="slider__bottom-col">
@@ -79,7 +79,7 @@
                    <li class="slider__rating-item" uk-icon="star"></li>
                    <li class="slider__rating-item" uk-icon="star"></li>
                </ul>
-               <p class="slider__description slider__description--third">CBD+Curcumin Coffee 750 mg</p>
+               <p class="slider__description slider__description--first">CBD+Curcumin Coffee 750 mg</p>
                <img :src="fifthItem" alt="first-img" class="slider__img">
            </div>
            <div class="slider__bottom-col">
@@ -96,7 +96,7 @@
                    <li class="slider__rating-item" uk-icon="star"></li>
                    <li class="slider__rating-item" uk-icon="star"></li>
                </ul>
-               <p class="slider__description slider__description--third">CBD+Curcumin Coffee 750 mg</p>
+               <p class="slider__description slider__description--first">CBD+Curcumin Coffee 750 mg</p>
               <img :src="sixthItem" alt="first-img" class="slider__img">
            </div>
            <div class="slider__bottom-col">
@@ -204,7 +204,7 @@ data () {
             width: 42px;
             height: 2px;
             right: 30px;
-            bottom: 43px;
+            bottom: 37px;
             transition: transform 0.5s;
         }
         &:hover {
@@ -217,9 +217,16 @@ data () {
             width: 42px;
             height: 2px;
             right: 30px;
-            bottom: 43px;
+            bottom: 37px;
             transform: translateX(-137%);
         }
+    }
+}
+&__img {
+    transition: all 0.7s ease;
+    cursor: zoom-in;
+    &:hover {
+        transform: scale(1.1);
     }
 }
 }
