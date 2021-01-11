@@ -1,18 +1,30 @@
 <template>
   <div class="app">
-<main-layout></main-layout>
+    <the-header/>
+ <first-section/>
+<second-section/>
+<third-section/>
+<fourth-section/>
+<the-footer/>
   </div>
 </template>
 <script>
-import MainLayout from './components/layout/MainLayout'
- import UIkit from 'uikit';
-import Icons from 'uikit/dist/js/uikit-icons';
-UIkit.use(Icons);
+import TheHeader from './components/sections/TheHeader';
+import FirstSection from './components/sections/FirstSection';
+import SecondSection from './components/sections/SecondSection';
+import ThirdSection from './components/sections/ThirdSection';
+import FourthSection from './components/sections/FourthSection';
+import TheFooter from './components/sections/TheFooter';
 
 export default {
 name: 'App',
 components: {
-  MainLayout,
+TheHeader,
+FirstSection,
+SecondSection,
+ThirdSection,
+FourthSection,
+TheFooter,
 }  
 }
 </script>

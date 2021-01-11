@@ -1,6 +1,6 @@
 <template>
     <div class="the-input">
-       <form action="#" class="the-input-form" method="get">
+       <form action="#" class="the-input__form" method="get">
             <input type="email" required class="the-input__input" name="email" id="email" placeholder="Email">
             <button type="submit" class="the-input__btn" uk-icon="icon: arrow-right; ratio: 1"></button>
        </form>
@@ -16,7 +16,6 @@
 .the-input{
     margin-bottom: 60px;
 &__form {
-    max-width: 370px;
     width: 100%;
 }
 &__input {

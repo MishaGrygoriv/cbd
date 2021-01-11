@@ -22,6 +22,28 @@ ul {
     margin: 0 auto;
 }
 
+.uk-modal.uk-open {
+    padding-top: 200px;
+    @media screen and (min-width: 576px) {
+        padding-top: 200px;
+    }
+    @media screen and (min-width: 768px) {
+        padding-top: 200px;
+    }
+    @media screen and (min-width: 1024px) {
+        padding-top: 200px;
+    }
+    @media screen and (min-width: 1280px) {
+        padding-top: 200px;
+    }
+    @media screen and (min-width: 1440px) {
+        padding-top: 100px;
+    }
+    @media screen and (min-width: 1660px) {
+        padding-top: 100px;
+    }
+}
+
 a {
     text-decoration: none;
 }

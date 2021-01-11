@@ -37,16 +37,65 @@ data() {
 </script>
 <style lang="scss">
 .details {
-    @include flex(space-between, center);
+    @include flex(center, center, column);
+    text-align: center;
+    @media screen and (min-width: 576px) {
+        @include flex(center, center, column);
+        text-align: center;
+      }
+      @media screen and (min-width: 768px) {
+        @include flex(space-between, center);
+        text-align: left;
+      }
+      @media screen and (min-width: 1024px) {
+        @include flex(space-between, center);
+        text-align: left;
+      }
+      @media screen and (min-width: 1280px) {
+        @include flex(space-between, center);
+        text-align: left;
+      }
     &__left-col {
+        margin-right: 0px;
+        margin-bottom: 50px;
+        @media screen and (min-width: 576px) {
+        margin-right: 0px;
+        margin-bottom: 50px;
+      }
+      @media screen and (min-width: 768px) {
+       margin-right: 195px;
+       margin-bottom: 0px;
+      }
+      @media screen and (min-width: 1024px) {
         margin-right: 195px;
+        margin-bottom: 0px;
+      }
+      @media screen and (min-width: 1280px) {
+        margin-right: 195px;
+        margin-bottom: 0px;
+      }
     }
     &__title {
         @include text($H240, 400, $dark-color);
         letter-spacing: 4.8px;
-        max-width: 280px;
+        max-width: 335px;
         width: 100%;
         margin-bottom: 50px;
+        @media screen and (min-width: 375px) {
+        max-width: 400px;
+      }
+        @media screen and (min-width: 576px) {
+        max-width: 410px;
+      }
+      @media screen and (min-width: 768px) {
+       max-width: 280px;
+      }
+      @media screen and (min-width: 1024px) {
+        max-width: 280px;
+      }
+      @media screen and (min-width: 1280px) {
+        max-width: 280px;
+      }
     }
     &__text {
         @include text($H80, 300, $green-text-color);
